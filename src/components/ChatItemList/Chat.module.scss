@@ -1,0 +1,124 @@
+.chat {
+  height: 100%;
+  width: 100%;
+  padding: 100px 20px 70px;
+  overflow-x: scroll;
+  &_message {
+    display: flex;
+    column-gap: 16px;
+    cursor: pointer;
+    padding: 12px 0;
+  }
+  &_my__message {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 16px;
+    cursor: pointer;
+    padding: 12px 0;
+  }
+  img {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+  }
+  h3 {
+    color: #201f1e;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  p {
+    color: #605e5c;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  &_width {
+    max-width: 470px;
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background: #f3f3f3;
+    position: relative;
+  }
+  &_width2 {
+    max-width: 470px;
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background: #f3f3f3;
+    display: flex;
+    column-gap: 12px;
+  }
+  &_my_text {
+    border-radius: 4px;
+    background: rgba(64, 126, 201, 0.16) !important;
+  }
+  &_time {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 9px;
+  }
+  &_time2 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 9px;
+  }
+  .new_message {
+    color: #407ec9;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    background: rgba(64, 126, 201, 0.08);
+    padding: 4px 0;
+    margin-top: 12px;
+  }
+}
+.data {
+  display: flex;
+  margin: 0 auto;
+  color: #201f1e;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 8px 12px;
+  width: max-content;
+  background: rgba(64, 126, 201, 0.08);
+}
+
+.textareaContainer {
+  position: relative;
+  margin-top: 32px;
+  max-width: 950px;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.styledTextarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-height: 100px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  position: relative;
+  &.placeholderActive:before {
+    content: attr(data-placeholder);
+    color: #aaa;
+    pointer-events: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+  }
+}
+
+.styledTextarea:focus {
+  outline: none;
+  border-color: rgba(64, 126, 201, 0.6);
+}
